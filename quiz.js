@@ -1,0 +1,1 @@
+(()=>{const b=document.body,q=+b.dataset.q,answer=+b.dataset.answer;function go(){localStorage.setItem("veloScore",String((+localStorage.getItem("veloScore")||0)+(this.dataset.a==answer?1:0)));location.href=q<5?"q"+(q+1)+".html":"result.html"}document.querySelectorAll(".choice").forEach(x=>x.onclick=go);})();
