@@ -3,58 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Veloce Media</title>
-<meta name="description" content="Veloce Media — fast and lightweight.">
-<meta name="theme-color" content="#ffffff">
+<title>Veloce Media — Quick Quiz</title>
+<meta name="description" content="Take the quick viral quiz and see your result.">
+<meta name="theme-color" content="#fff">
 <style>
 *{box-sizing:border-box}
 html,body{width:100%;height:100%;margin:0;overflow:hidden}
 body{background:#fff;color:#111;font:14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.page{height:100dvh;width:100%;max-width:900px;margin:auto;padding:12px 14px;display:grid;grid-template-rows:auto 1fr auto}
+.page{height:100dvh;width:100%;max-width:900px;margin:auto;padding:10px 12px;display:grid;grid-template-rows:auto 1fr auto}
 header{display:flex;align-items:center;justify-content:space-between}
 .logo{font-size:15px;font-weight:800;letter-spacing:.08em}
-.status{font-size:10px;letter-spacing:.1em;color:#999}
+.tag{font-size:10px;color:#999;letter-spacing:.08em}
 .main{min-height:0;display:grid;place-items:center}
-.content{width:100%;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:10px;align-items:center}
-.ads{display:grid;gap:10px}
-.ad{height:clamp(74px,16vh,115px);border:1px solid #e8e8e8;border-radius:8px;display:grid;place-items:center;color:#aaa;font-size:9px;letter-spacing:.1em;background:#fafafa}
-.center{text-align:center;padding:8px}
-.eyebrow{color:#999;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
-h1{font-size:clamp(28px,6vw,48px);line-height:1;letter-spacing:-.045em;margin:9px 0}
-p{margin:0 auto;color:#777;max-width:300px;font-size:12px}
-.continue{display:inline-block;margin-top:18px;padding:12px 28px;border-radius:8px;background:#111;color:#fff;text-decoration:none;font-weight:800;font-size:13px}
-footer{padding-top:10px;color:#aaa;text-align:center;font-size:10px}
+.content{width:100%;display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:10px;align-items:center}
+.ads{display:grid;gap:8px}
+.ad{height:clamp(70px,15vh,105px);border:1px solid #e9e9e9;border-radius:7px;background:#fafafa;display:grid;place-items:center;color:#aaa;font-size:9px;letter-spacing:.08em}
+.center{text-align:center;padding:6px}
+.kicker{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#888}
+h1{font-size:clamp(28px,6vw,46px);line-height:1;letter-spacing:-.045em;margin:8px 0}
+p{max-width:310px;margin:0 auto;color:#777;font-size:12px;line-height:1.45}
+.btn{display:inline-block;margin-top:15px;padding:12px 27px;border-radius:7px;background:#111;color:#fff;text-decoration:none;font-weight:800;font-size:13px}
+.note{margin-top:7px;font-size:9px;color:#aaa}
+footer{text-align:center;color:#aaa;font-size:10px;padding-top:6px}
 @media(max-width:600px){
-.page{padding:10px}
-.content{grid-template-columns:1fr;gap:9px}
-.ads{grid-template-columns:1fr 1fr;gap:8px}
-.ad{height:clamp(58px,11vh,82px)}
-.center{padding:2px 0}
-h1{font-size:clamp(27px,8vw,38px);margin:7px 0}
-.continue{margin-top:12px;padding:11px 25px}
-footer{padding-top:6px}
+.page{padding:8px}
+.content{grid-template-columns:1fr;gap:7px}
+.ads{grid-template-columns:1fr 1fr;gap:7px}
+.ad{height:clamp(54px,10vh,72px)}
+.center{padding:0}
+h1{font-size:clamp(27px,8vw,37px);margin:6px 0}
+.btn{margin-top:11px;padding:11px 25px}
 }
 </style>
 </head>
 <body>
 <div class="page">
-<header><div class="logo">VELOCE MEDIA</div><div class="status">FAST ACCESS</div></header>
+<header><div class="logo">VELOCE MEDIA</div><div class="tag">QUICK QUIZ</div></header>
 <main class="main">
 <section class="content">
-<div class="ads">
-<div class="ad">ADVERTISEMENT</div>
-<div class="ad">ADVERTISEMENT</div>
-</div>
+<div class="ads"><div class="ad">ADVERTISEMENT</div><div class="ad">ADVERTISEMENT</div></div>
 <div class="center">
-<div class="eyebrow">Welcome</div>
-<h1>Ready to continue?</h1>
-<p>Tap continue to proceed.</p>
-<a class="continue" href="#" id="continueBtn" aria-label="Continue">Continue</a>
+<div class="kicker">1-minute challenge</div>
+<h1>How sharp is your brain?</h1>
+<p>Take a quick challenge and discover how you score.</p>
+<a class="btn" href="#" id="continueBtn">Start Quiz</a>
+<div class="note">Fast • Free • Mobile friendly</div>
 </div>
-<div class="ads">
-<div class="ad">ADVERTISEMENT</div>
-<div class="ad">ADVERTISEMENT</div>
-</div>
+<div class="ads"><div class="ad">ADVERTISEMENT</div><div class="ad">ADVERTISEMENT</div></div>
 </section>
 </main>
 <footer>© 2026 Veloce Media</footer>
