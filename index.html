@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Veloce Media — Continue</title>
+<meta name="description" content="Veloce Media — a lightweight one-screen experience.">
+<meta name="theme-color" content="#050505">
+<style>
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+body{background:#050505;color:#fff;font:14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.page{height:100dvh;width:100%;display:grid;grid-template-rows:auto 1fr auto;max-width:900px;margin:auto;padding:12px 14px}
+header{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:15px;font-weight:800;letter-spacing:.08em}.status{font-size:10px;letter-spacing:.1em;color:#555}
+.main{min-height:0;display:grid;place-items:center}
+.content{width:100%;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:10px;align-items:center}
+.ads{display:grid;gap:10px}.ad{height:clamp(74px,16vh,115px);border:1px solid #1b1b1b;border-radius:8px;display:grid;place-items:center;color:#444;font-size:9px;letter-spacing:.1em}
+.center{text-align:center;padding:8px}.eyebrow{color:#888;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+h1{font-size:clamp(28px,6vw,48px);line-height:1;letter-spacing:-.045em;margin:9px 0}
+p{margin:0 auto;color:#777;max-width:300px;font-size:12px}
+.continue{display:inline-block;margin-top:18px;padding:12px 28px;border-radius:8px;background:#fff;color:#000;text-decoration:none;font-weight:800;font-size:13px}
+footer{padding-top:10px;color:#444;text-align:center;font-size:10px}
+@media(max-width:600px){.page{padding:10px}.content{grid-template-columns:1fr;gap:9px}.ads{grid-template-columns:1fr 1fr;gap:8px}.ad{height:clamp(58px,11vh,82px)}.center{padding:2px 0}h1{font-size:clamp(27px,8vw,38px);margin:7px 0}.continue{margin-top:12px;padding:11px 25px}footer{padding-top:6px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header><div class="logo">VELOCE MEDIA</div><div class="status">LIGHTWEIGHT</div></header>
+<main class="main"><section class="content">
+<div class="ads"><div class="ad">ADVERTISEMENT</div><div class="ad">ADVERTISEMENT</div></div>
+<div class="center"><div class="eyebrow">Welcome</div><h1>Ready to continue?</h1><p>Fast, simple and designed to keep the important action right in the middle of your screen.</p><a class="continue" href="#continue" id="continueBtn">Continue</a></div>
+<div class="ads"><div class="ad">ADVERTISEMENT</div><div class="ad">ADVERTISEMENT</div></div>
+</section></main>
+<footer>© 2026 Veloce Media</footer>
+</div>
+</body>
+</html>
